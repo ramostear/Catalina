@@ -7,23 +7,23 @@ UnaBoot-Theme-Catalina是参考[hexo-theme-Anatole](https://github.com/Ben02/hex
 下面是主题界面的预览。
 ## 主题预览
 
-1.博客主页
+>博客主页
 ![](./pic/index.png)
 
-2.文章归档
+>文章归档
 ![](./pic/archive.png)
 
-3.文章分类
+>文章分类
 ![](./pic/category.png)
 
-4.文章标签
+>文章标签
 ![](./pic/tags.png)
 
-5.友链
+>友链
 ![](./pic/links.png)
 
-6.About页面
+>About页面
 ![](./pic/about.png)
 
-7.文章详情页面
+>文章详情页面
 ![](./pic/post.png)
