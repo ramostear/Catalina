@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="${favicon!''}" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title><#if tag?? && tag != null>${tag.name}<#else>标签</#if> - ${title!''}</title>
+    <title>${(tag.name)!'标签'} - ${title!''}</title>
     <link rel="stylesheet" href="${una}/${theme}/css/font-awesome.css">
     <link rel="stylesheet" href="${una}/${theme}/css/ionicons.css">
     <link rel="stylesheet" href="${una}/${theme}/css/adminlte.css">
@@ -27,7 +27,7 @@
                         <span class="hd l">标签:</span>
                         <div class="bd">
                             <ul class="">
-                                <#if tag?? && tag != null>
+                                <#if tag??>
                                     <li class="tag-nav-item">
                                         <a href="${una}/category/tags">全部</a>
                                     </li>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <#if tag?? && tag!=null>
+                <#if tag??>
                     <@u_tag_page_detail id=tag.id offset=offset>
                         <#if results?? && results.content?size gt 0>
                             <#list results.content as post>

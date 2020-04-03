@@ -2,81 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./img/logo.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="icon" href="${favicon!''}" type="image/x-icon">
+    <link rel="shortcut icon" href="${favicon!''}" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>关于我 - 尤娜博客</title>
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/ionicons.css">
-    <link rel="stylesheet" href="css/adminlte.css">
-    <link rel="stylesheet" href="css/unaboot.css">
+    <title>关于我 - ${title!''}</title>
+    <link rel="stylesheet" href="${una}/${theme}/css/font-awesome.css">
+    <link rel="stylesheet" href="${una}/${theme}/css/ionicons.css">
+    <link rel="stylesheet" href="${una}/${theme}/css/adminlte.css">
+    <link rel="stylesheet" href="${una}/${theme}/css/unaboot.css">
 </head>
 <body>
     <div class="sidebar animated fadeInDown">
-        <div class="ribbon-wrapper ribbon-lg">
-            <div class="ribbon bg-gray-dark" style="text-transform: none;">
-                <a href="https://github.com/ramostear">
-                    <i class="fa fa-github"></i> Fork me
-                </a>
-            </div>
-        </div>
-        <div class="logo-title">
-            <img src="img/logo.png" style="width: 127px;">
-            <h3 class="mt-2">UnaBoot V1.2.0</h3>
-            <div class="description">
-                <p>UnaBoot Default Theme</p>
-            </div>
-        </div>
-        <ul class="social-links">
-            <li>
-                <a href="https://github.com/ramostear" target="_blank">
-                    <i class="fa fa-github fa-2x"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://gitee.com/ramostear" target="_blank">
-                    <i class="fa fa-git fa-2x"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://weibo.com/ramostear" target="_blank">
-                    <i class="fa fa-weibo fa-2x"></i>
-                </a>
-            </li>
-        </ul>
-        <div class="footer pt-2">
-            <a href="#" target="_blank">
-                <span>Powered By Ramostear</span>
-            </a>
-            <div class="by_farbox">
-                <a href="#" target="">&copy;2020-ramostear</a>
-                <a href="#" target="_blank">ICP备:2011201508号</a>
-            </div>
-        </div>
+        <#include "./left.html"/>
     </div>
     <div class="main">
         <div class="page-top animated fadeInDown">
-            <div class="nav">
-                <li>
-                    <a href="#" target="_blank" class="">Home</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="">Archive</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="">Category</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="">Tags</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="">Links</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="current">About</a>
-                </li>
-            </div>
+            <#include "./nav.html"/>
         </div>
         <div class="autopagerize_page_element">
             <div class="content">
@@ -96,16 +38,16 @@
                         <strong>地址：贵州省黔西南州兴义市兴义大道大商汇2#1001室</strong>
                     </p>
                     <p>
-                        <img src="img/wechat.png" alt="微信二维码" class="img-rounded img-fluid" style="width: 200px;">
-                        <img src="img/qq.png" alt="QQ群二维码" class="img-rounded img-fluid" style="width: 200px;">
+                        <img src="${una}/${theme}/img/wechat.png" alt="微信二维码" class="img-rounded img-fluid" style="width: 200px;">
+                        <img src="${una}/${theme}/img/qq.png" alt="QQ群二维码" class="img-rounded img-fluid" style="width: 200px;">
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <script src="js/jquery/jquery.min.js"></script>
-    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/adminlte.min.js"></script>
+    <script src="${una}/${theme}/js/jquery/jquery.min.js"></script>
+    <script src="${una}/${theme}/js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="${una}/${theme}/js/adminlte.min.js"></script>
     <script type="text/javascript">
 
     </script>
